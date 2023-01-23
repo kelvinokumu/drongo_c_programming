@@ -20,6 +20,6 @@ int main()
 {
     //struct structure_name variable_name;
 
-    struct Student a; // here a is the variable of type Student
+    struct Student student1; // here student1 is the variable of type Student
     return 0;
 }
