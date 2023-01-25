@@ -11,7 +11,7 @@ struct Student
 int main()
 {
    // created variable student1 for structure Student 
-   struct Student student1 = {"Student_name" , 1, 'A'};
+   struct Student student1 = {"Drongo" , 1, 'A'};
   
   // printing values 
   printf( "Student Name : %s\n", student1.name);
