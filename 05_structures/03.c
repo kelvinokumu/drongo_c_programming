@@ -8,12 +8,6 @@ struct Student
     char section;
 };
 
-struct Node{
-int address;
-int baddress;
-char info[10];
-}node1;
-
 int main()
 {
 
@@ -23,7 +17,7 @@ int main()
     // accessing student1 member and initializing them
     strcpy(student1.name, "Kelvin");
     student1.class = 1;
-    // student1.section = 'A';
+    student1.section = 'A';
 
     // printing values
     printf("Student Name : %s\n", student1.name);

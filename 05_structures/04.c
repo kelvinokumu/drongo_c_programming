@@ -38,6 +38,5 @@ int main()
         arr_student[i].name, arr_student[i].roll_no, arr_student[i].marks);
     }
 
-    // signal to operating system program ran fine
     return 0;
 }
