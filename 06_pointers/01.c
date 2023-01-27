@@ -6,8 +6,9 @@ void main(){
     // int * n2;
 
     int a = 45;
-    int *y; // declare variable y as a pointer
-    *y = &a;
+    int *y; // = &a; // declare variable y as a pointer
+    
+    y = &a;
 
     printf("%i \n", a);
     printf("%i \n", *y);

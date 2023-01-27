@@ -21,5 +21,6 @@ int main()
     //struct structure_name variable_name;
 
     struct Student student1; // here student1 is the variable of type Student
+    int n;
     return 0;
 }

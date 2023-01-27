@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-#define MAX 2
+#define MAX 3
 
 struct student
 {
@@ -34,7 +34,7 @@ int main()
 
     for(i = 0; i < MAX; i++ )
     {
-        printf("%s\t%d\t%.2f\n",
+        printf("%s\t%d\t%.2f\n", 
         arr_student[i].name, arr_student[i].roll_no, arr_student[i].marks);
     }
 

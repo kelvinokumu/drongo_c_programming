@@ -6,7 +6,7 @@ struct Student
   char name[50];
   int class;
   char section;
-}; 
+}student1;
 
 int main()
 {
