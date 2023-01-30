@@ -4,9 +4,11 @@
 void main()
 {
     printf("Start \n");
+
+    // declare a variable login of type boolean and assign it to false
     bool login = false;
-    
-    if (false == true)
+
+    if (login == true)
     {
         printf("success \n");
     }
