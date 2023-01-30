@@ -5,11 +5,12 @@ void main()
 {
     printf("Start \n");
     bool login = false;
-    if (!login)
+    
+    if (false == true)
     {
         printf("success \n");
     }
-    else
+    else if(login != true)
     {
         printf("Wrong password or email \n");
     }
