@@ -15,7 +15,7 @@ int main()
 
 	// Open the existing file using fopen()
 	// in write mode using "w" attribute
-	filePointer = fopen("drongo.c", "w");
+	filePointer = fopen("drongo.txt", "w");
 
 	// Check if this filePointer is null
 	// which maybe if the file does not exist
@@ -41,7 +41,7 @@ int main()
 		// Closing the file using fclose()
 		fclose(filePointer);
 
-		printf("Data successfully written in file drongo.c\n");
+		printf("Data successfully written in file drongo.txt \n");
 		printf("The file is now closed.");
 	}
 	return 0;
