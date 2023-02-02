@@ -13,7 +13,7 @@ int main()
 	// Declare the variable for the data to be read from file
 	char dataToBeRead[50];
 
-	// Open the existing file GfgTest.c using fopen()
+	// Open the existing file drongo.c using fopen()
 	// in read mode using "r" attribute
 	filePointer = fopen("drongo.c", "r");
 
