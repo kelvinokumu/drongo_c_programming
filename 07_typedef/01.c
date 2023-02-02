@@ -1,21 +1,18 @@
-// C program to illustrate file inclusion
-// <> used to import system header file
 #include <stdio.h>
 
-// " " used to import user-defined file
-#include "arithmetic.h"
+// defines the PI value to be 3.14 in the whole program
+#define PI 3.14
 
-// main function
-int main()
-{
-	// add function defined in process.h
-	add(10, 20);
-
-	// multiply function defined in process.h
-	multiply(10, 20);
-
-	// printf defined in stdio.h
-	printf("Drongo College \n");
-
+int main() {
+	float radius, area;
+	
+	printf("Enter radius of circle to find its area : ");
+	scanf("%f", &radius);
+	
+	// PI will be replaced by 3.14 in the below statement
+	area = PI * radius * radius;
+	
+	printf("Area of Circle : %0.2f", area);
+	
 	return 0;
 }

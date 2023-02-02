@@ -13,12 +13,12 @@ int main()
     if (lg)
     {
         printf("Good \n");
-        home();
+        // home();
     }
     else
     {
         printf("Bad \n");
-        reset_password();
+        // reset_password();
     }
 
     return 0;
