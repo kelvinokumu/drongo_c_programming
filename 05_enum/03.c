@@ -2,17 +2,20 @@
 #include <stdio.h>
 
 // declaration on enum
-enum textEditor {
+enum textEditor
+{
     BOLD = 1,
     ITALIC = 2,
     UNDERLINE = 3
 };
 
-int main() {
+int main()
+{
     // Initializing enum variable
     enum textEditor feature = ITALIC;
 
-    switch (feature) {
+    switch (feature)
+    {
     case 1:
         printf("It is BOLD");
         break;
@@ -27,4 +30,3 @@ int main() {
 
     return 0;
 }
-
