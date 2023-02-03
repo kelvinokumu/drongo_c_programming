@@ -6,12 +6,17 @@ union Data {
    float f;
    char str[20];
 };
- 
-int main( ) {
+
+int main() {
 
    union Data data;        
 
-   printf( "Memory size occupied by data : %d\n", sizeof(data));
+   printf( "Memory size occupied by data : %ld \n", sizeof(data));
+
+
+   char grade = 'A';
+   printf("%ld \n", sizeof(grade));
+   printf("%ld \n", sizeof('A'));
 
    return 0;
 }

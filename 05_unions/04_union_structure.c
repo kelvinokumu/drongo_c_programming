@@ -16,7 +16,7 @@ struct structJob
 
 int main()
 {
-   printf("size of union = %d bytes", sizeof(uJob));
-   printf("\nsize of structure = %d bytes", sizeof(sJob));
+   printf("size of union = %ld bytes", sizeof(uJob));
+   printf("\nsize of structure = %ld bytes", sizeof(sJob));
    return 0;
 }
