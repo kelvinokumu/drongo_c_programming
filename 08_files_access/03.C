@@ -11,11 +11,13 @@ int main()
         printf("\nCAN NOT OPEN FILE");
         exit(1);
     }
+
     do
     {
         s = getc(fp); // read file character by character
         printf("%c", s);
     } while (s != EOF);
+    
     fclose(fp);
 
     return 0;

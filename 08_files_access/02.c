@@ -21,7 +21,7 @@ int main()
 	// which maybe if the file does not exist
 	if (filePointer == NULL)
 	{
-		printf("drongo.c file failed to open.");
+		printf("drongo.txt file failed to open.");
 	}
 	else
 	{
