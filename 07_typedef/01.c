@@ -2,7 +2,7 @@
 
 // defines the PI value to be 3.14 in the whole program
 // PI is constant and cannot be changed
-#define PI 3.14
+#define PI 3.142
 
 int main() {
 	float radius, area;

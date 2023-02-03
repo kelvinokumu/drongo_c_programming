@@ -1,17 +1,20 @@
 #include<stdio.h>
 
-// defines a function SQR(a) returning (a * a) and with 'a' being a parameter
-#define SQR(a) (a * a)
+// defines multiplication of 2 numbers and returns an output
+#define SQR(a, b) (a * b)
 
 int main() {
-	int num;
+	int num, num2;
 	
-	printf("Enter a number to find its square : ");
+	printf("Enter first number : ");
 	scanf("%d", &num);
+
+	printf("Enter second number : ");
+	scanf("%d", &num2);
 	
 	
 	// SQR(num) replaces square of num in the output
-	printf("Square of %d : %d \n", num, SQR(num));
+	printf("%d * %d : %d \n", num, num2, SQR(num, num2));
 	
 	return 0;
 }
