@@ -2,15 +2,18 @@
 
 void main()
 {
-    int i, j, m, n;
+    int i, j, row, columns;
+
     printf("How many rows do you want \n");
-    scanf("%i", &m);
+    scanf("%i", &row);
+    
     printf("How many column do you want \n");
-    scanf("%i", &n);        
-    int A[m][n];
-    for (i = 0; i < m; i++)
+    scanf("%i", &columns);     
+    
+    int A[row][columns];
+    for (i = 0; i < row; i++)
     {
-        for (j = 0; j < n; j++)
+        for (j = 0; j < columns; j++)
         {
             printf("Enter an element \n");
             scanf("%d", &A[i][j]);
@@ -18,10 +21,10 @@ void main()
     }
 
     printf("Printing values \n");
-    for (i = 0; i < m; i++)
+    for (i = 0; i < row; i++)
     {
         printf("First row \n");
-        for (j = 0; j < n; j++)
+        for (j = 0; j < columns; j++)
         {
             printf("%d \t", A[i][j]);
         }
