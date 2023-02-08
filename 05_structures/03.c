@@ -4,11 +4,11 @@
 struct Student
 {
     char name[50];
-    int class;
+    int number;
     char section;
 };
 
-int main()
+void main()
 {
 
     // created variable student1 for structure Student
@@ -16,13 +16,13 @@ int main()
 
     // accessing student1 member and initializing them
     strcpy(student1.name, "Kelvin");
-    student1.class = 1;
+    student1.number = 1;
     student1.section = 'A';
 
     // printing values
     printf("Student Name : %s\n", student1.name);
-    printf("Student Class : %d\n", student1.class);
+    printf("Student Class : %d\n", student1.number);
     printf("Student Section : %c\n", student1.section);
 
-    return 0;
+    // return 0;
 }

@@ -2,16 +2,16 @@
 #include<string.h>
 #define MAX 3
 
-struct student
+typedef struct student
 {
     char name[20];
     int roll_no;
     float marks;
-};
+}student;
 
 int main()
 {
-    struct student arr_student[MAX];
+    student arr_student[MAX];
     int i;
 
     for(i = 0; i < MAX; i++ )
