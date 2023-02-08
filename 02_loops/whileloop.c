@@ -2,10 +2,10 @@
 
 void main()
 {
-    int i = 0;
-    while (i < 5)
+    int i = 1;
+    while (i < 10)
     {
-        printf("Drongo \n");
+        printf("Drongo %i \n",i);
         i++;
     }
     

@@ -1,10 +1,9 @@
 #include<stdio.h>
 
 void main(){ 
-    int i = 0;   
+    int i = 1;   
     do{
-        
-        printf("Drongo \n");
-        // i++;
-    }while(i < 5);
+        printf("Drongo %i \n",i);
+        i++;
+    }while(i < 10);
 }
