@@ -2,28 +2,28 @@
 #include <string.h>
 
 // declaring structure
-struct struct_example
+typedef struct struct_example
 {
     int integer;
     float decimal;
-    char name[20];
+    char name[10];
 };
 
 // declaring union
-union union_example
+typedef union union_example
 {
     int integer;
     float decimal;
-    char name[20];
+    char name[10];
 };
 
 void main()
 {
     // creating variable for structure and initializing values difference six
-    struct struct_example s = {18, 38, "drongo"};
+    struct struct_example s = {18, 38.25, "drongo"};
 
     // creating variable for union and initializing values
-    union union_example u = {18, 38, "drongo"};
+    union union_example u = {18, 38.25, "drongo"};
 
     printf("structure data:\n integer: %d\n"
            "decimal: %.2f\n name: %s\n",
@@ -64,7 +64,7 @@ void main()
     s.decimal = 120;
     printf("\n decimal: %f", s.decimal);
 
-    strcpy(s.name, "C programming");
+    strcpy(s.name, "C Drongo");
     printf("\n name: %s\n", s.name);
 
     printf("\n union data:");
@@ -74,7 +74,7 @@ void main()
     u.decimal = 120;
     printf("\n decimal: %f", u.decimal);
 
-    strcpy(u.name, "C programming");
+    strcpy(u.name, "C Drongo");
     printf("\n name: %s\n", u.name);
 
     // difference four
