@@ -6,7 +6,6 @@
 
 int main()
 {
-
 	// Declare the file pointer
 	FILE *filePointer;
 
