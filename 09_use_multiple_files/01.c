@@ -1,6 +1,7 @@
 // C program to illustrate file inclusion
 // <> used to import system header file
 #include <stdio.h>
+#include <math.h>
 
 // " " used to import user-defined file
 #include "arithmetic.h"
