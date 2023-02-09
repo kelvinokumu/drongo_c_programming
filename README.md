@@ -5,7 +5,6 @@
 ## Variables in C
 ```Variable is the name given to memory location where value is not fixed always. Let's see how to define a variable with the help of an example and understand the scope of the variable.```
 ## Data Type in C
-
 ```A data type contains the values that an expression might take, such as a variable or a function. So let's understand the different types of data types, how to declare and use them in a C program.```
 ## Input/Outpu in C
 ```Input is a means to provide some data to be used in the program and Output is to display data on the screen or a file. With the help of a program, let's understand the different input and output statements in C  and also check how the given input is processed to get the results.```
@@ -21,3 +20,5 @@
 ```The structure is a user-defined data type and Union provides a way to create our own data types. Let us understand what is a structure and union, also learn how to declare and initialize and use them in a program.```
 ## Pointers in C
 ```A pointer is a variable that can hold the address of another variable. Let's understand what is a pointer and what are different uses of pointers are in a C program.```
+## Working with multiple files.
+```A program contains different sections. This can be separated into different files for easy readability.```
