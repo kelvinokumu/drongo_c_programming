@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-#define MAX 3
 
 typedef struct student
 {
@@ -11,10 +10,13 @@ typedef struct student
 
 int main()
 {
-    student arr_student[MAX];
+    int max;
+    printf("How many students do you have \n");
+    scanf("%i",&max);
+    student arr_student[max];
     int i;
 
-    for(i = 0; i < MAX; i++ )
+    for(i = 0; i < max; i++ )
     {
         printf("\nEnter details of student %d\n\n", i+1);
 
@@ -32,10 +34,9 @@ int main()
 
     printf("Name\tRoll no\tMarks\n");
 
-    for(i = 0; i < MAX; i++ )
+    for(i = 0; i < max; i++ )
     {
-        printf("%s\t%d\t%.2f\n", 
-        arr_student[i].name, arr_student[i].roll_no, arr_student[i].marks);
+        printf("%s\t%d\t%.2f\n", arr_student[i].name, arr_student[i].roll_no, arr_student[i].marks);
     }
 
     return 0;
