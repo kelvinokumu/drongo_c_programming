@@ -11,5 +11,6 @@ int main()
     putchar(ch); // Displaying one character
 
     printf("\n");
+
     return 0;
 }
