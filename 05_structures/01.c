@@ -16,6 +16,14 @@ struct Student
     int roll_no;
 };
 
+
+typedef struct 
+{
+    char name[50];
+    int class;
+    int roll_no;
+}Student;
+
 int main()
 {
     //struct structure_name variable_name;
