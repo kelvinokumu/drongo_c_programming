@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-FILE *filePointer;
+// FILE *filePointer;
 
 void addBook();
 void deleteBook();
 void searchBook();
+void menu();
 
 typedef struct
 {
@@ -14,8 +15,15 @@ typedef struct
     char author[15];
 } book;
 
+static book bks[5];
+static int counter;
+
 void main()
 {
+    menu();   
+}
+
+void menu(){
     int option;
     printf("1. for Add Book \n");
     printf("2. for deleting book \n");
@@ -41,20 +49,19 @@ void main()
 
 void addBook()
 {
-    filePointer = fopen("book.txt", "a");
+    // filePointer = fopen("book.txt", "a");
     // int ISBN;
     // char title[50];
     // char author[15];
 
-    book b1;
-    printf("Enter ISBN number \n");
-    scanf("%i", &b1.ISBN);
-    printf("Enter title \n");
-    fgets(b1.title_author, sizeof(b1.title_author), stdin);
-    printf("Enter author \n");
-    fgets(b1.author, sizeof(b1.author), stdin);
+    // printf("Enter ISBN number \n");
+    // scanf("%i", &b1.ISBN);
+    // printf("Enter title \n");
+    // fgets(b1.title_author, sizeof(b1.title_author), stdin);
+    // printf("Enter author \n");
+    // fgets(b1.author, sizeof(b1.author), stdin);
 
-    fprintf(filePointer, "Book ISBN %i Title_Author %s ", b1.ISBN, b1.author);
+    // fprintf(filePointer, "Book ISBN %i Title_Author %s ", b1.ISBN, b1.author);
 
     // book b1;
     // printf("Enter ISBN number \n");
@@ -63,6 +70,13 @@ void addBook()
     // scanf("%s",title);
     // printf("Enter author \n");
     // fgets("%s",author);
+
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Enter ISBN number \n");
+        scanf("%i", &bks[i].ISBN);
+    }
+    menu();
 }
 
 void deleteBook()
@@ -71,14 +85,26 @@ void deleteBook()
     printf("Enter ISBN of the book to delete");
     scanf("%i", &ISBN);
 
-    printf("Delete");
+    printf("Delete \n");
+    menu();
 }
 
 void searchBook()
 {
-    int ISBN;
-    printf("Enter ISBN of the book to delete");
-    scanf("%i", &ISBN);
+    // int ISBN;
+    // printf("Enter ISBN of the book to delete");
+    // scanf("%i", &ISBN);
 
-    printf("Delete");
+    // printf("Delete");
+    int search_book;
+    printf("Enter ISBN for book to search");
+    scanf("%i", &search_book);
+    for (int i = 0; i < 5; i++)
+    {
+        if (bks[i].ISBN == search_book)
+        {
+            printf("Success \n");
+        }
+    }
+    menu();
 }
