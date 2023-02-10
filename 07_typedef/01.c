@@ -14,7 +14,7 @@ int main() {
 	// PI will be replaced by 3.14 in the below statement
 	area = PI * radius * radius;
 	
-	printf("Area of Circle : %0.2f", area);
+	printf("Area of Circle : %0.2f \n", area);
 	
 	return 0;
 }
