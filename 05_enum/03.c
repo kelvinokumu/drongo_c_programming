@@ -2,17 +2,17 @@
 #include <stdio.h>
 
 // declaration on enum
-enum textEditor
+typedef enum
 {
     BOLD = 1,
     ITALIC = 2,
     UNDERLINE = 3
-};
+}textEditor;
 
 int main()
 {
     // Initializing enum variable
-    enum textEditor feature = ITALIC;
+    textEditor feature = ITALIC;
 
     switch (feature)
     {

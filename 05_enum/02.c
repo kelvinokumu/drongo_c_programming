@@ -1,5 +1,5 @@
 #include <stdio.h>
-enum day
+typedef enum
 {
     sunday,
     monday,
@@ -8,17 +8,17 @@ enum day
     thursday,
     friday,
     saturday
-};
+}day;
 
 int main()
 {
-    enum day d = wednesday;
+    day d = wednesday;
     printf("The day number stored in d is %d \n", d);
 
-    if (d == wednesday)
-    {
-        printf("wednesday \n");
-    }
+    // if (d == wednesday)
+    // {
+    //     printf("wednesday \n");
+    // }
 
-    return 0;
+    // return 0;
 }
