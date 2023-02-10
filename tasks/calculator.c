@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     case '^':
         answer = pow(valueOne, valueTwo);
         break;
-    case ' ':
+    case 's':
         answer = sqrt(valueTwo);
         break;
     default:
