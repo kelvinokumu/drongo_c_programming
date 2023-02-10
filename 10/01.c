@@ -20,15 +20,17 @@ static int counter;
 
 void main()
 {
-    menu();   
+    menu();
 }
 
-void menu(){
+void menu()
+{
     int option;
     printf("1. for Add Book \n");
     printf("2. for deleting book \n");
     printf("3. for search book \n");
-    printf("Enter a number between 1 and 3 \n");
+    printf("4. to exit \n");
+    printf("Enter a number between 1 and 4 \n");
     scanf("%i", &option);
     switch (option)
     {
@@ -40,6 +42,9 @@ void menu(){
         break;
     case 3:
         searchBook();
+        break;
+    case 4:
+        exit(0);
         break;
 
     default:
