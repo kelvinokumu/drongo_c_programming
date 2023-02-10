@@ -3,8 +3,9 @@
 
 FILE *filePointer;
 
-
 void addBook();
+void deleteBook();
+void searchBook();
 
 typedef struct
 {
@@ -15,7 +16,27 @@ typedef struct
 
 void main()
 {
-    addBook();
+    int option;
+    printf("1. for Add Book \n");
+    printf("2. for deleting book \n");
+    printf("3. for search book \n");
+    printf("Enter a number between 1 and 3 \n");
+    scanf("%i", &option);
+    switch (option)
+    {
+    case 1:
+        addBook();
+        break;
+    case 2:
+        deleteBook;
+        break;
+    case 3:
+        searchBook();
+        break;
+
+    default:
+        break;
+    }
 }
 
 void addBook()
@@ -27,13 +48,13 @@ void addBook()
 
     book b1;
     printf("Enter ISBN number \n");
-    scanf("%i",&b1.ISBN);
+    scanf("%i", &b1.ISBN);
     printf("Enter title \n");
     fgets(b1.title_author, sizeof(b1.title_author), stdin);
     printf("Enter author \n");
     fgets(b1.author, sizeof(b1.author), stdin);
 
-    fprintf(filePointer,"Book ISBN %i Title_Author %s ",b1.ISBN, b1.author);
+    fprintf(filePointer, "Book ISBN %i Title_Author %s ", b1.ISBN, b1.author);
 
     // book b1;
     // printf("Enter ISBN number \n");
@@ -48,8 +69,16 @@ void deleteBook()
 {
     int ISBN;
     printf("Enter ISBN of the book to delete");
-    scanf("%i",&ISBN);
+    scanf("%i", &ISBN);
 
+    printf("Delete");
+}
+
+void searchBook()
+{
+    int ISBN;
+    printf("Enter ISBN of the book to delete");
+    scanf("%i", &ISBN);
 
     printf("Delete");
 }
