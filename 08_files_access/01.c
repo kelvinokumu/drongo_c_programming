@@ -14,13 +14,12 @@ int main()
 
 	// Open the existing file using fopen()
 	// in write mode using "w" attribute
-	filePointer = fopen("drongo.txt", "w");
+	filePointer = fopen("drongo.txt", "a");
 
-	// Check if this filePointer is null
-	// which maybe if the file does not exist
+	// Check if this filePointer is null which maybe if the file does not exist
 	if (filePointer == NULL)
 	{
-		printf("drongo.c file failed to open.");
+		printf("drongo.txt file failed to open.");
 	}
 	else
 	{
@@ -33,7 +32,7 @@ int main()
 
 			// writing in the file using fputs()
 			fputs(dataToBeWritten, filePointer);
-			fprintf(filePointer,"Adding another Input \n");
+			fprintf(filePointer, "Adding another Input \n");
 			fputs("\n", filePointer);
 		}
 

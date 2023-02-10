@@ -34,14 +34,14 @@ int main()
 		{
 
 			// Print the dataToBeRead
-			printf("%s", dataToBeRead);
+			printf("%s \n", dataToBeRead);
 		}
 
 		// Closing the file using fclose()
 		fclose(filePointer);
 
 		printf("Data successfully read from file drongo.c\n");
-		printf("The file is now closed.");
+		printf("The file is now closed. \n");
 	}
 	return 0;
 }
