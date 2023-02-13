@@ -22,7 +22,7 @@ void main()
     {
         printf("D \n");
     }
-    else{
-        printf("Fail \n");
-    }
+    // else{
+    //     printf("Fail \n");
+    // }
 }
