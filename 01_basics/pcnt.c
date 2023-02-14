@@ -2,7 +2,8 @@
 
 // this is my main function
 void main(){
-    double number = 1500, percentage;
+    double number, percentage;
+    char number3;
     scanf("%lf", &number);
     
     percentage = number * 0.3;
