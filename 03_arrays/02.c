@@ -19,15 +19,15 @@ void main()
         if (nums[i] > 60)
         {
             // pass = pass + 1;
-            pass += 1;
-            // printf("Greater \n");
+            // pass += 1;
+            printf("Greater \n");
         }
         else
         {
-            fail = fail + 1;
-            // printf("Less than \n");
+            // fail = fail + 1;
+            printf("Less than \n");
         }
     }
-    printf("Pass %i \n", pass);
-    printf("Fail %i \n", fail);
+    // printf("Pass %i \n", pass);
+    // printf("Fail %i \n", fail);
 }
