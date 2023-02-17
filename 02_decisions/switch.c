@@ -3,6 +3,7 @@
 int sum();
 int sub();
 
+// diiferent cases are called depending on the case
 void main()
 {
     printf("Start \n");
