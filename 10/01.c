@@ -58,13 +58,13 @@ void addBook()
     // int ISBN;
     // char title[50];
     // char author[15];
-
-    // printf("Enter ISBN number \n");
-    // scanf("%i", &b1.ISBN);
-    // printf("Enter title \n");
-    // fgets(b1.title_author, sizeof(b1.title_author), stdin);
-    // printf("Enter author \n");
-    // fgets(b1.author, sizeof(b1.author), stdin);
+    book b1;
+    printf("Enter ISBN number \n");
+    scanf("%i", &b1.ISBN);
+    printf("Enter title \n");
+    fgets(b1.title_author, sizeof(b1.title_author), stdin);
+    printf("Enter author \n");
+    fgets(b1.author, sizeof(b1.author), stdin);
 
     // fprintf(filePointer, "Book ISBN %i Title_Author %s ", b1.ISBN, b1.author);
 
