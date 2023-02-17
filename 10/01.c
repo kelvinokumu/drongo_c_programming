@@ -38,7 +38,7 @@ void menu()
         addBook();
         break;
     case 2:
-        deleteBook;
+        deleteBook();
         break;
     case 3:
         searchBook();
