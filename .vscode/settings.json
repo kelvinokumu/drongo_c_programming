@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "03.C": "cpp"
+        "03.C": "cpp",
+        "05.C": "cpp"
     }
 }
