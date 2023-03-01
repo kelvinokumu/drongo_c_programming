@@ -12,6 +12,4 @@ int sum(int fnum, int snum)
 {
     int total = fnum + snum;
     printf("this is sum %i \n",total);
-    
-     
 }
