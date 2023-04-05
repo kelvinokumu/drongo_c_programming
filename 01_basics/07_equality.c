@@ -12,4 +12,8 @@ void main()
     d = c != b;
     printf("%i \n\n", d);
 
+    // == comparison a == s
+
+    // = assignment a = s
+
 }

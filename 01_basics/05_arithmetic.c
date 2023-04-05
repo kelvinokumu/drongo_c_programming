@@ -21,6 +21,6 @@ void main()
     printf("%i \n", d);
 
     printf("Modulo \n");
-    d = c % 7;
+    d = 12345 % 10;
     printf("%i \n", d);
 }
