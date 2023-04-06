@@ -2,8 +2,8 @@
 
 void main()
 {
-    int num;
-    printf("Enter a number between 1 and 2: \n");
+    int num; // variable declaration
+    printf("Enter a number between 1 and 4: \n");
     scanf("%i", &num);
 
     // this is a switch case
@@ -36,4 +36,6 @@ void main()
         printf("Wrong value \n");
         break;
     }
+
+    printf("outside switch \n");
 }

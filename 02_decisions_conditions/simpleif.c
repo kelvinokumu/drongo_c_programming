@@ -3,16 +3,16 @@
 void main()
 {
     int x = 125;
-    if (x < 80 || x < 100)
+    if (x > 80 && x < 100)
     {
         printf("Grade is A \n");
     }
-    else if (x < 10)
+    else if (x > 70 && x <)
     {
-        printf("X is less than 10 \n");
+        printf("Grade is B \n");
     }
     else
     {
-        printf("X is 10 \n");
+        printf("Grade is C \n");
     }
 }
