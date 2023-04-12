@@ -1,7 +1,13 @@
 {
     "files.associations": {
         "03.C": "cpp",
+<<<<<<< HEAD
         "05.C": "cpp"
     },
     "cmake.configureOnOpen": true
+=======
+        "05.C": "cpp",
+        "011.C": "cpp"
+    }
+>>>>>>> 60c9cc4 (c programming)
 }
