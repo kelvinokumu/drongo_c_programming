@@ -16,7 +16,7 @@ void main()
 
     char grade;
     printf("Enter a character \n");
-    scanf(" %c",&grade);
+    scanf(" %c",&grade); // space needed before the %c
     printf("%c \n",grade);
     
     printf("Enter your name \n");

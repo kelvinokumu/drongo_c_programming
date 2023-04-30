@@ -13,7 +13,6 @@ void main()
         // printf("Arrays %i \n", arr[3]);
         if (arr[j] % 2 == 0)
         {
-
             even = even + 1;
         } else {
             odd = odd + 1;

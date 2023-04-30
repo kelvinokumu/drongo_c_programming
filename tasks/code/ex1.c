@@ -8,7 +8,3 @@ void main()
     answer = number * number;
     printf("The square is %i \n", answer);
 }
-
-void main()
-{
-}
